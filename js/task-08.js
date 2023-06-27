@@ -2,7 +2,7 @@ const formLogin = document.querySelector('.login-form')
 formLogin.addEventListener('submit',handlerSubmit)
 function handlerSubmit(event) {
     event.preventDefault();
-    const { email, password } = ewent.currentTarget.elements
+    const { email, password } = event.currentTarget.elements
     if (!email.value || !password.value) {
         const message = `insert all field`;
         alert (message)
